@@ -18,5 +18,10 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 group :development, :test do
-     gem 'sqlite3'
+	gem 'sqlite3'
+end
+
+group :production do
+	gem 'pg', '~> 0.20.0'
+  gem 'rails_12factor', '~> 0.0.3'
 end
